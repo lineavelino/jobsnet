@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/form.css">
+    <title>JobsNet | Cadastro</title>
+</head>
+
+<body>
+    <a href="index.html">Voltar</a>
+    <a href="confirmation.html">Confirmação</a>
+    <form action="/sign-in" method="post">
+        <h3>DADOS PESSOAIS</h3>
+        <div>
+            <label for="name">Nome completo:</label>
+            <input type="text" name="name" placeholder="Bill Gates" />
+        </div>
+        <div>
+            <label for="role">Cargo pretendido:</label>
+            <input type="text" name="role" placeholder="CEO da Microsoft" />
+        </div>
+        <div>
+            <label for="birth-date">Data de nascimento</label>
+            <input type="date" name="birth-date" />
+        </div>
+        <div>
+            <label for="marital-status">Estado Civil</label>
+            <select name="marital-status">
+                <option value="" disabled selected>Selecione</option>
+                <option value="single">Solteira(o)</option>
+                <option value="married">Casada(o)</option>
+                <option value="stable-union">União estável</option>
+                <option value="divorced">Divorciada(o)</option>
+                <option value="widow">Viúva(o)</option>
+            </select>
+        </div>
+        <div>
+            <label for="gender">Sexo</label>
+            <select name="gender">
+                <option value="" disabled selected>Selecione</option>
+                <option value="feminine">Feminino</option>
+                <option value="masculine">Masculino</option>
+            </select>
+        </div>
+        <div>
+            <label for="address">Endereço</label>
+            <input type="text" name="address" placeholder="Rua dos Alfeneiros" />
+        </div>
+        <div>
+            <label for="house-number">Número</label>
+            <input type="number" name="house-number" placeholder="04" />
+        </div>
+        <div>
+            <label for="house-complement">Complemento</label>
+            <input type="text" name="house-complement" placeholder="Fundos" />
+        </div>
+        <div>
+            <label for="zip-code">Cep</label>
+            <input type="text" name="zip-code" placeholder="12345-678" />
+        </div>
+        <div>
+            <label for="neighborhood">Cep</label>
+            <input type="text" name="neighborhood" placeholder="Copacabana" />
+        </div>
+        <div>
+            <label for="city">Cidade</label>
+            <input type="text" name="city" placeholder="Rio de Janeiro" />
+        </div>
+        <div>
+            <label for="state">Estado</label>
+            <input type="text" name="state" placeholder="Rio de Janeiro" />
+        </div>
+        <div>
+            <label for="telephone1">Telefone 1</label>
+            <input type="tel" name="telephone1" placeholder="(21) 91234-5678" />
+        </div>
+        <div>
+            <label for="telephone2">Telefone 2</label>
+            <input type="tel" name="telephone2" placeholder="(21) 1234-5678" />
+        </div>
+        <div>
+            <label for="email">Seu melhor email:</label>
+            <input type="email" placeholder="billgates@microsoft.com" />
+        </div>
+        <h3>REDES SOCIAIS</h3>
+        <div>
+            <label for="linkedin">LinkedIn</label>
+            <input type="url" name="linkedin" placeholder="linkedin.com/billgates">
+        </div>
+        <div>
+            <label for="github">GitHub</label>
+            <input type="url" name="github" placeholder="github.com/billgates">
+        </div>
+        <div>
+            <label for="facebook">Facebook</label>
+            <input type="url" name="facebook" placeholder="facebook.com/billgates">
+        </div>
+        <div>
+            <label for="twitter">Twitter</label>
+            <input type="url" name="twitter" placeholder="twitter.com/billgates">
+        </div>
+        <button type="submit">Tudo pronto! Enviar</button>
+    </form>
+</body>
+
+</html>
