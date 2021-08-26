@@ -45,4 +45,17 @@ form {
     background-color: #DDE8EB;
 }
 
+button {
+    display: flex;
+    padding: 13px 20px 13px 24px;
+    background: #DC9044;
+    border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+form > img {
+    position: relative;
+}
+
 
