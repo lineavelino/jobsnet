@@ -31,6 +31,21 @@ form {
     background-color: #DDE8EB;
 }
 
+.container-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 44px;
+    border: none;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+}
 button {
     display: flex;
     padding: 13px 20px 13px 24px;
