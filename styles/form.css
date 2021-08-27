@@ -55,15 +55,26 @@ label {
 
 button {
     display: flex;
-    padding: 13px 20px 13px 24px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 72px;
+    height: 68px;
     background: #DC9044;
-    border-radius: 4px;
+    border-radius: 1em;
     color: #FFFFFF;
     cursor: pointer;
+    border: none;
+    width: 30%;
+    font-weight: 600;
+    transition: 300ms;
 }
 
-form > img {
-    position: relative;
+button:hover {
+    background-color: #F7BF46;
+    color: black;
+}
 }
 
 
