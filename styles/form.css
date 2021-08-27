@@ -1,11 +1,4 @@
-* {
-    position: relative;
-    margin: 0;
-}
-
 body {
-    /* width: 100vw; */
-    /* height: 200vh; */
     background: linear-gradient(63.18deg, #318FA6 0%, rgba(49, 143, 166, 0) 100%), linear-gradient(116.49deg, #DFF4FB 0%, rgba(223, 244, 251, 0) 99.51%), linear-gradient(180deg, #7757C6 0%, rgba(119, 87, 198, 0) 100%);
     background-blend-mode: normal, darken, luminosity;
  }
