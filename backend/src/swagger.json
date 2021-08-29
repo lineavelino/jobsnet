@@ -45,6 +45,10 @@
                     "type": "string",
                     "example": "1993-06-18T00:00:00.000Z"
                   },
+                  "cpf": {
+                    "type": "number",
+                    "example": "32750824001"
+                  },
                   "maritalStatus": {
                     "type": "string",
                     "example": "Casada"
@@ -84,10 +88,6 @@
                   "telephone1": {
                     "type": "number",
                     "example": "21979683375"
-                  },
-                  "telephone2": {
-                    "type": "number",
-                    "example": "2136954777"
                   },
                   "email": {
                     "type": "string",
