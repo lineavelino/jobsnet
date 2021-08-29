@@ -34,88 +34,82 @@
               "schema": {
                 "properties": {
                   "name": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Aline Avelino"
                   },
                   "role": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Desenvolvedora Fullstack"
                   },
                   "birthDate": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "1993-06-18T00:00:00.000Z"
                   },
                   "maritalStatus": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Casada"
                   },
                   "gender": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Feminino"
                   },
                   "zipCode": {
-                    "type": "number"
+                    "type": "number",
+                    "example": "20785501"
                   },
                   "address": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Rua dos Bobos"
                   },
                   "houseNumber": {
-                    "type": "number"
+                    "type": "number",
+                    "example": "0"
                   },
                   "houseComplement": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Fundos"
                   },
                   "neighborhood": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Senador Vasconcelos"
                   },
                   "city": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Rio de Janeiro"
                   },
                   "uf": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "RJ"
                   },
                   "telephone1": {
-                    "type": "number"
+                    "type": "number",
+                    "example": "21979683375"
                   },
                   "telephone2": {
-                    "type": "number"
+                    "type": "number",
+                    "example": "2136954777"
                   },
                   "email": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "aline.savelino@gmail.com"
                   },
                   "linkedin": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "https://www.linkedin.com/in/alineavelinorocha/"
                   },
                   "github": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "https://www.github.com/lineavelino"
                   },
                   "facebook": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "facebook.com/"
                   },
                   "twitter": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "https://www.twitter.com/lineavelino"
                   }
                 }
-              }
-            }
-          },
-          "examples": {
-            "Profissional 1": {
-              "value": {
-                "name": "Aline Avelino",
-                "role": "Desenvolvedora Fullstack",
-                "birthDate": "18/06/1993",
-                "maritalStatus": "Casada",
-                "gender": "Feminino",
-                "zipCode": "20785501",
-                "address": "Rua dos Bobos",
-                "houseNumber": "0",
-                "houseComplement": "Fundos",
-                "neighborhood": "Senador Vasconcelos",
-                "city": "Rio de Janeiro",
-                "uf": "RJ",
-                "telephone1": "21979683375",
-                "telephone2": "",
-                "email": "aline.savelino@gmail.com",
-                "linkedin": "https://www.linkedin.com/in/alineavelinorocha/",
-                "github": "https://www.github.com/lineavelino",
-                "facebook": "",
-                "twitter": "https://www.twitter.com/lineavelino"
               }
             }
           }

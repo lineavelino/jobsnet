@@ -16,7 +16,7 @@ const candidateSchema = {
     "uf": { type: String, unique: false, required: true },
     "telephone1": { type: Number, unique: false, required: true },
     "telephone2": { type: Number, unique: false, required: false },
-    "email": { type: String, unique: true, required: true },
+    "email": { type: String, unique: false, required: false },
     "linkedin": { type: String, unique: false, required: false },
     "github": { type: String, unique: false, required: false },
     "facebook": { type: String, unique: false, required: false },
