@@ -69,12 +69,12 @@
 
             <div>
                 <label for="zipCode">Cep</label>
-                <input type="number" name="zipCode" placeholder="12345-678" />
+                <input type="number" name="zipCode" id="zipCode" placeholder="12345-678" />
             </div>
 
             <div>
                 <label for="address">Endereço</label>
-                <input type="text" name="address" placeholder="Rua dos Alfeneiros" />
+                <input type="text" name="address" id="address" placeholder="Rua dos Alfeneiros" />
             </div>
 
             <div>
@@ -89,17 +89,17 @@
 
             <div>
                 <label for="neighborhood">Bairro</label>
-                <input type="text" name="neighborhood" placeholder="Copacabana" />
+                <input type="text" name="neighborhood" id="neighborhood" placeholder="Copacabana" />
             </div>
 
             <div>
                 <label for="city">Cidade</label>
-                <input type="text" name="city" placeholder="Rio de Janeiro" />
+                <input type="text" name="city" id="city" placeholder="Rio de Janeiro" />
             </div>
 
             <div>
                 <label for="uf">Estado</label>
-                <input type="text" name="uf" placeholder="RJ" />
+                <input type="text" name="uf" id="uf" placeholder="RJ" />
             </div>
 
             <div>
@@ -145,5 +145,47 @@
         </div>
     </form>
 </body>
+
+<script>
+    const validarCep = (cep) => /^[0-9]+$/.test(cep);
+
+    const cepValido = (cep) => cep.length == 8 && validarCep(cep);
+
+    const buscarCep = async () => {
+        limparFormulario();
+        const cep = document.getElementById('zipCode').value;
+        const url = `https://viacep.com.br/ws/${cep}/json/`;
+
+        if (cepValido(cep)) {
+            const dados = await fetch(url);
+            const endereco = await dados.json();
+
+            if (endereco.hasOwnProperty('erro')) {
+                document.getElementById('address').value = 'Cep não encontrado';
+            } else {
+                preencherFormulario(endereco);
+            }
+        } else {
+            document.getElementById('address').value = 'Cep incorreto';
+        }
+
+    }
+
+    const limparFormulario = (endereco) => {
+        document.getElementById('address').value = "";
+        document.getElementById('neighborhood').value = "";
+        document.getElementById('city').value = "";
+        document.getElementById('uf').value = "";
+    }
+
+    const preencherFormulario = (endereco) => {
+        document.getElementById('address').value = endereco.logradouro;
+        document.getElementById('neighborhood').value = endereco.bairro;
+        document.getElementById('city').value = endereco.localidade;
+        document.getElementById('uf').value = endereco.uf;
+    }
+
+    document.getElementById('zipCode').addEventListener('blur', buscarCep)
+</script>
 
 </html>
