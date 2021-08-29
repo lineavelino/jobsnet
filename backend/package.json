@@ -4,8 +4,14 @@
   "description": "Backend projeto JobsNet",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "author": "Aline Avelino",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.2",
+    "swagger-ui-express": "^4.1.6"
+  }
 }

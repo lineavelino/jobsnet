@@ -5,17 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./form.css">
     <title>JobsNet | Cadastro</title>
 </head>
 
 <body>
-    <a href="index.html">Voltar</a>
-    <a href="confirmation.html">Confirmação</a>
-
     <header>
         <div>
             <img src="./images/logo.svg" alt="Logo JobsNet">
@@ -23,7 +20,7 @@
         </div>
     </header>
 
-    <form action="/sign-in" method="post">
+    <form action="/register" method="post">
         <h3>DADOS PESSOAIS</h3>
 
         <fieldset class="container-data">
@@ -38,17 +35,17 @@
             </div>
 
             <div>
-                <label for="birth-date">Data de nascimento</label>
-                <input type="date" name="birth-date" />
+                <label for="birthDate">Data de nascimento</label>
+                <input type="date" name="birthDate" />
             </div>
 
             <div>
-                <label for="marital-status">Estado Civil</label>
-                <select name="marital-status">
+                <label for="maritalStatus">Estado Civil</label>
+                <select name="maritalStatus">
                     <option value="" disabled selected>Selecione</option>
                     <option value="single">Solteira(o)</option>
                     <option value="married">Casada(o)</option>
-                    <option value="stable-union">União estável</option>
+                    <option value="stableUnion">União estável</option>
                     <option value="divorced">Divorciada(o)</option>
                     <option value="widow">Viúva(o)</option>
                 </select>
@@ -66,23 +63,23 @@
             </div>
 
             <div>
+                <label for="zipCode">Cep</label>
+                <input type="number" name="zipCode" placeholder="12345-678" />
+            </div>
+
+            <div>
                 <label for="address">Endereço</label>
                 <input type="text" name="address" placeholder="Rua dos Alfeneiros" />
             </div>
 
             <div>
-                <label for="house-number">Número</label>
-                <input type="number" name="house-number" placeholder="04" />
+                <label for="houseNumber">Número</label>
+                <input type="number" name="houseNumber" placeholder="04" />
             </div>
 
             <div>
-                <label for="house-complement">Complemento</label>
-                <input type="text" name="house-complement" placeholder="Fundos" />
-            </div>
-
-            <div>
-                <label for="zip-code">Cep</label>
-                <input type="text" name="zip-code" placeholder="12345-678" />
+                <label for="houseComplement">Complemento</label>
+                <input type="text" name="houseComplement" placeholder="Fundos" />
             </div>
 
             <div>
@@ -141,7 +138,8 @@
             </div>
         </fieldset>
 
-        <button type="submit">Tudo pronto! Enviar <img src="./images/forward.svg" alt="avançar"></button>
+        <button type="submit" onclick="register()">Tudo pronto! Enviar <img src="./images/forward.svg"
+                alt="avançar"></button>
 
         <div class="onboarding">
             <img src="./images/onboarding.svg" alt="Imagem de onboarding">

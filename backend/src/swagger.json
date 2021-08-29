@@ -1,0 +1,126 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "description": "Conectar profissionais às oportunidades de emprego.",
+    "version": "1.0.0",
+    "title": "JobsNet",
+    "contact": {
+      "email": "aline.savelino@gmail.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "localhost:5000",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "oportunidades",
+      "description": "Recrutamento e seleção de profissionais nas mais diversas áreas."
+    }
+  ],
+  "paths": {
+    "/register": {
+      "post": {
+        "summary": "Cadastrar profissional",
+        "description": "Inserção de profissionais na base de dados para conexão com as vagas disponíveis.",
+        "tags": [
+          "profissional"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "role": {
+                    "type": "string"
+                  },
+                  "birthDate": {
+                    "type": "string"
+                  },
+                  "maritalStatus": {
+                    "type": "string"
+                  },
+                  "gender": {
+                    "type": "string"
+                  },
+                  "zipCode": {
+                    "type": "number"
+                  },
+                  "address": {
+                    "type": "string"
+                  },
+                  "houseNumber": {
+                    "type": "number"
+                  },
+                  "houseComplement": {
+                    "type": "string"
+                  },
+                  "neighborhood": {
+                    "type": "string"
+                  },
+                  "city": {
+                    "type": "string"
+                  },
+                  "uf": {
+                    "type": "string"
+                  },
+                  "telephone1": {
+                    "type": "number"
+                  },
+                  "telephone2": {
+                    "type": "number"
+                  },
+                  "email": {
+                    "type": "string"
+                  },
+                  "linkedin": {
+                    "type": "string"
+                  },
+                  "github": {
+                    "type": "string"
+                  },
+                  "facebook": {
+                    "type": "string"
+                  },
+                  "twitter": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "examples": {
+            "Profissional 1": {
+              "value": {
+                "name": "Aline Avelino",
+                "role": "Desenvolvedora Fullstack",
+                "birthDate": "18/06/1993",
+                "maritalStatus": "Casada",
+                "gender": "Feminino",
+                "zipCode": "20785501",
+                "address": "Rua dos Bobos",
+                "houseNumber": "0",
+                "houseComplement": "Fundos",
+                "neighborhood": "Senador Vasconcelos",
+                "city": "Rio de Janeiro",
+                "uf": "RJ",
+                "telephone1": "21979683375",
+                "telephone2": "",
+                "email": "aline.savelino@gmail.com",
+                "linkedin": "https://www.linkedin.com/in/alineavelinorocha/",
+                "github": "https://www.github.com/lineavelino",
+                "facebook": "",
+                "twitter": "https://www.twitter.com/lineavelino"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
