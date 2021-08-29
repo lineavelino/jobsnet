@@ -25,17 +25,17 @@
 
         <fieldset class="container-data">
             <div>
-                <label for="name">Nome completo:</label>
-                <input type="text" name="name" placeholder="Bill Gates" />
+                <label for="name">Nome completo: <span class="required">*</span></label>
+                <input type="text" name="name" placeholder="Bill Gates" required />
             </div>
 
             <div>
-                <label for="role">Cargo pretendido:</label>
+                <label for="role">Cargo pretendido: <span class="required">*</span></label>
                 <input type="text" name="role" placeholder="CEO da Microsoft" />
             </div>
 
             <div>
-                <label for="birthDate">Data de nascimento</label>
+                <label for="birthDate">Data de nascimento <span class="required">*</span></label>
                 <input type="date" name="birthDate" />
             </div>
 
@@ -46,7 +46,7 @@
             </div>
 
             <div>
-                <label for="maritalStatus">Estado Civil</label>
+                <label for="maritalStatus">Estado Civil <span class="required">*</span></label>
                 <select name="maritalStatus">
                     <option value="" disabled selected>Selecione</option>
                     <option value="single">Solteira(o)</option>
@@ -58,7 +58,7 @@
             </div>
 
             <div>
-                <label for="gender">Sexo</label>
+                <label for="gender">Sexo <span class="required">*</span></label>
                 <select name="gender">
                     <option value="" disabled selected>Selecione</option>
                     <option value="feminine">Feminino</option>
@@ -69,17 +69,17 @@
             </div>
 
             <div>
-                <label for="zipCode">Cep</label>
+                <label for="zipCode">Cep <span class="required">*</span></label>
                 <input type="number" name="zipCode" id="zipCode" placeholder="12345-678" />
             </div>
 
             <div>
-                <label for="address">Endereço</label>
+                <label for="address">Endereço <span class="required">*</span></label>
                 <input type="text" name="address" id="address" placeholder="Rua dos Alfeneiros" />
             </div>
 
             <div>
-                <label for="houseNumber">Número</label>
+                <label for="houseNumber">Número <span class="required">*</span></label>
                 <input type="number" name="houseNumber" placeholder="04" />
             </div>
 
@@ -89,27 +89,27 @@
             </div>
 
             <div>
-                <label for="neighborhood">Bairro</label>
+                <label for="neighborhood">Bairro <span class="required">*</span></label>
                 <input type="text" name="neighborhood" id="neighborhood" placeholder="Copacabana" />
             </div>
 
             <div>
-                <label for="city">Cidade</label>
+                <label for="city">Cidade <span class="required">*</span></label>
                 <input type="text" name="city" id="city" placeholder="Rio de Janeiro" />
             </div>
 
             <div>
-                <label for="uf">Estado</label>
+                <label for="uf">Estado <span class="required">*</span></label>
                 <input type="text" name="uf" id="uf" placeholder="RJ" />
             </div>
 
             <div>
-                <label for="telephone1">Telefone 1</label>
+                <label for="telephone1">Telefone <span class="required">*</span></label>
                 <input type="tel" name="telephone1" placeholder="(21) 91234-5678" />
             </div>
 
             <div>
-                <label for="email">Seu melhor email:</label>
+                <label for="email">Seu melhor email: <span class="required">*</span></label>
                 <input type="text" name="email" placeholder="billgates@microsoft.com" />
             </div>
 
