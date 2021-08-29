@@ -40,8 +40,9 @@
             </div>
 
             <div>
-                <label for="cpf">CPF</label>
-                <input type="Number" name="cpf" placeholder="12345678901" />
+                <label for="cpf">CPF <span class="required">*</span></label>
+                <input type="Number" name="cpf" id="cpf" placeholder="12345678901" required />
+                <span id="wrongCpf" style="display: none">Cpf inválido</span>
             </div>
 
             <div>

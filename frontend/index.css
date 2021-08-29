@@ -46,6 +46,14 @@ label {
     font-family: 'Poppins', sans-serif;
 }
 
+.required {
+    color: red;
+}
+
+#wrongCpf {
+    color: red;
+}
+
 .container-social {
     display: grid;
     grid-template-columns: 1fr 1fr;

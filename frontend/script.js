@@ -1,3 +1,27 @@
+//Validação cpf
+const cpf = document.getElementById('cpf').value;
+
+const validarCpf = () => {
+    if (document.getElementById('cpf').value.length === 11) {
+        return true
+    } else {
+        return false
+    }
+}
+
+const mostrarErroCpf = (cpf) => {
+    const validacao = validarCpf(cpf);
+    console.log(validacao)
+    if (validacao === true) {
+        document.getElementById('wrongCpf').style.display = 'none';
+    } else {
+        document.getElementById('wrongCpf').style.display = 'inline';
+    }
+}
+
+document.getElementById('cpf').addEventListener('focusout', mostrarErroCpf)
+
+// Validação Cep
 const validarCep = (cep) => /^[0-9]+$/.test(cep);
 
 const cepValido = (cep) => cep.length == 8 && validarCep(cep);
