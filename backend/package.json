@@ -4,7 +4,8 @@
   "description": "Backend projeto JobsNet",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
   },
   "author": "Aline Avelino",
   "license": "ISC",
