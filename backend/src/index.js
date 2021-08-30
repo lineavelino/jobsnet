@@ -22,7 +22,7 @@ const Candidate = require('./candidateSchema');
 // importar arquivos
 const frontend = (path.join(__dirname, '../../frontend'));
 const formHtml = (path.join(__dirname, '../../frontend/index.html'));
-const registerHtml = (path.join(__dirname, '../../frontend/register.html'));
+const erroHtml = (path.join(__dirname, '../../frontend/erro.html'));
 
 // app. use
 app.use(express.json());
@@ -36,9 +36,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.get('/', (_, res) => {
     res.sendFile(formHtml);
 });
-app.get('/register', (_, res) => {
-    res.sendFile(registerHtml)
-})
 
 app.post('/register', async function register(req, res) {
     // mandar dados pro banco de dados
@@ -69,7 +66,7 @@ app.post('/register', async function register(req, res) {
     newCandidate.save((err, _) => {
         if (err) {
             console.log(err);
-            return res.status(500).send('Erro interno no servidor.');
+            return res.status(500).sendFile(erroHtml);
         }
 
         return res.status(200).redirect('/');

@@ -36,7 +36,6 @@ const buscarCep = async () => {
         const endereco = await dados.json();
 
         if (endereco.hasOwnProperty('erro')) {
-            // document.getElementById('address').value = 'Cep não encontrado';
             document.getElementById('wrongCep').style.display = 'inline';
 
         } else {
@@ -45,7 +44,6 @@ const buscarCep = async () => {
         }
     } else {
         document.getElementById('wrongCep').style.display = 'inline';
-        // document.getElementById('address').value = 'Cep incorreto';
     }
 
 }
