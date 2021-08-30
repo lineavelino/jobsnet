@@ -54,6 +54,10 @@ label {
     color: red;
 }
 
+#wrongCep {
+    color: red;
+}
+
 .container-social {
     display: grid;
     grid-template-columns: 1fr 1fr;

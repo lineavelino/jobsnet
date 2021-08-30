@@ -36,12 +36,16 @@ const buscarCep = async () => {
         const endereco = await dados.json();
 
         if (endereco.hasOwnProperty('erro')) {
-            document.getElementById('address').value = 'Cep não encontrado';
+            // document.getElementById('address').value = 'Cep não encontrado';
+            document.getElementById('wrongCep').style.display = 'inline';
+
         } else {
             preencherFormulario(endereco);
+            document.getElementById('wrongCep').style.display = 'none';
         }
     } else {
-        document.getElementById('address').value = 'Cep incorreto';
+        document.getElementById('wrongCep').style.display = 'inline';
+        // document.getElementById('address').value = 'Cep incorreto';
     }
 
 }
