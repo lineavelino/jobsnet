@@ -3,6 +3,8 @@ const express = require('express');
 const app = express();
 const port = 5000;
 const routes = require('./routes');
+const cors = require('cors');
+require('dotenv').config();
 
 // swagger
 const swaggerUI = require('swagger-ui-express');
@@ -10,8 +12,7 @@ const swaggerDocs = require('./swagger.json');
 
 // setando o banco de dados
 const mongoose = require('mongoose');
-const collection = "candidates"
-const client = mongoose.connect("mongodb+srv://lineavelino:XVGbHMF3f3XZ9OI6@jobsnet.tzmyb.mongodb.net/JobsNet?retryWrites=true&w=majority")
+const client = mongoose.connect(`mongodb+srv://${process.env.USER_MONGO}:${process.env.PASSWORD_MONGO}@jobsnet.tzmyb.mongodb.net/JobsNet?retryWrites=true&w=majority`)
 
 // outros
 const path = require('path');
@@ -31,6 +32,7 @@ app.use(routes);
 app.use(serveStatic(frontend));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }))
+app.use(cors())
 
 
 app.get('/', (_, res) => {
