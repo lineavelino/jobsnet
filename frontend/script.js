@@ -50,7 +50,7 @@ const buscarCep = async () => {
 
 }
 
-const limparFormulario = (endereco) => {
+const limparFormulario = () => {
     document.getElementById('address').value = "";
     document.getElementById('neighborhood').value = "";
     document.getElementById('city').value = "";
